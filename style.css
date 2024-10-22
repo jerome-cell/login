@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+
+.facebook-logo {
+    color: #1877f2;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial  ;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 370px; /* Changed from width to max-width */
+  }
+
+.login-header {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #166fe5;
+}
+
+.forgotten-account {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:15px ;
+    margin-top: 3vh;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#166fe5; ;
+}
+.or-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #ccc; /* faint color */
+  }
+  
+  .hr-left, .hr-right {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    flex: 1;
+  }
+  
+  .or-text {
+    padding: 0 20px; /* spaces at left and right */
+    font-size: 12px;
+    font-weight: bold;
+    color: #969696; /* same faint color as hr */
+    background-color: #fff; /* ensure text isn't overlapped */
+  }
+.sign-up-btn {
+    background-color: #42b72a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 60%;
+    margin-left: 12vh;
+    height: 8vh;
+}
+
+.sign-up-btn:hover {
+    background-color: #2d6d19;
+} 
+/* Mobile Devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .login-container {
+      width: 90%;
+      padding: 10px;
+    }
+    .sign-up-btn {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  /* Small Mobile Devices (max-width: 480px) */
+  @media only screen and (max-width: 480px) {
+    .login-container {
+      width: 95%;
+    }
+    .facebook-logo {
+      font-size: 30px;
+    }
+    .login-header {
+      font-size: 16px;
+    }
+    input[type="email"], input[type="password"], input[type="text"] {
+      padding: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 15px;
+    }
+    .sign-up-btn {
+      height: 6vh;
+    }
+  }
+  
+  /* Extra Small Mobile Devices (max-width: 320px) */
+  @media only screen and (max-width: 320px) {
+    .login-container {
+      width: 100%;
+    }
+    .facebook-logo {
+      font-size: 25px;
+    }
+    .login-header {
+      font-size: 14px;
+    }
+    input[type="email"], input[type="password"], input[type="text"] {
+      padding: 8px;
+    }
+    input[type="submit"] {
+      padding: 8px 15px;
+    }
+    .sign-up-btn {
+      height: 5vh;
+      font-size: 14px;
+    }
+  }
